@@ -13,7 +13,7 @@ form = """
             <input type="submit" />
         </form>
     </body>
-</html>
+</html> 
 """
 
 @app.route("/")
@@ -28,7 +28,7 @@ def hello():
 
 time_form = """
     <style>
-        .error {{ color: red; }}
+        .error {{ color: red;}}
     </style>
     <h1>Validate Time</h1>
     <form method='POST'>
@@ -40,9 +40,8 @@ time_form = """
             <input name="minutes" type="text" value='{minutes}' />
         </label>
         <p class="error">{minutes_error}</p>
-        <input type="submit" value="Validate" />
+        <input type"submit" value="Validate" />
     </form>
-    """
 
 @app.route('/validate-time')
 def display_time_form():
@@ -93,4 +92,4 @@ def validate_time():
             minutes=minutes)
 
 
-app.run()
+app.run(host='0.0.0.0')

@@ -40,7 +40,7 @@ time_form = """
             <input name="minutes" type="text" value='{minutes}' />
         </label>
         <p class="error">{minutes_error}</p>
-        <input type"submit" value="Validate" />
+        <input type="submit" value="Validate" />
     </form>
     """
 @app.route('/validate-time')

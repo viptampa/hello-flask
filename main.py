@@ -42,6 +42,7 @@ time_form = """
         <p class="error">{minutes_error}</p>
         <input type"submit" value="Validate" />
     </form>
+    """
 
 @app.route('/validate-time')
 def display_time_form():
